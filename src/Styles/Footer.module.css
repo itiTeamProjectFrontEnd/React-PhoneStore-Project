@@ -1,0 +1,142 @@
+/* body{ font-family: Courier, monospace;} */
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+  padding-left: 0 !important ;
+}
+.footer{
+	background-color: black;
+    padding: 35px 0;
+}
+.footercol{
+   width: 25%;
+   padding: 0 15px;
+   margin-top: 1%;
+}
+.footercol h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footercol h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color:#d18ef4;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footercol ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footercol ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footercol ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footercol .sociallinks a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footercol .sociallinks a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footercol{
+    width: 48%;
+    margin-bottom: 30px;
+}
+.footercol:nth-child(3){
+  width: 100%;
+  margin-bottom: 30px;
+}
+}
+
+/* .flext{
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.parag{
+  width: 400px;
+}
+.icon{
+  display:flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: 30px;
+}
+.about{
+  margin-left: 70px;
+  margin-right: 70px;
+  color: white;
+  row-gap: 20px;
+}
+.link{
+  margin-top:10px;
+}
+.category{
+  color: white;
+  margin-left: 50px;
+
+}
+
+@media (max-width: 750px) {
+     .flext{
+        padding: 0px;
+      }
+      .parag{
+        font-size: 15px;
+        width: 200px;
+      }
+      .icon{
+        width: 200px;
+        margin: 0px;
+      }
+      .about{
+        margin-left: 10px;
+        margin-right: 20px;
+        color: white;
+        row-gap: 10px;
+      }
+      .link{
+        margin-top:10px;
+      }
+      .category{
+        display: none;
+      
+      }
+} */

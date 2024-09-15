@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.head{
+color: #1f2478;
+font-size: 1.2rem;
+font-weight: bold;
+}
+.ay {
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+.ay:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); 
+}
+.pbtn{
+  background-color:  #d18ef4;
+border-radius: 3px;
+  border: 0;
+}
+.pbtn:hover{
+  background-color:#1f2478;;
+  
+  color: #ffffff;
+
+}
+.discount {
+  font-weight: normal;
+  color: #777;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+.templateContainer {
+  margin-left: 20px;
+}
+.fform{
+  display: flex;
+}
+
+.sform:focus {
+  outline: none;
+  
+}
+
+.sform2:focus {
+  outline: none;
+  background-color: transparent;
+  color: #1a110bd4;
+}
+
+
+.closeButton {
+  top: 0;
+  right: 10px;
+  background-color: transparent;
+  border: 2px solid #bcbbbb;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.closeButton:hover {
+  background-color: #f8f9fa;
+  border-color: #cccccc;
+}
+.alertMessage {
+  margin: 15px; 
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.alertSuccess {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.alertError {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+
+
+.noShadowToast{
+  box-shadow: none !important; /* Remove the shadow */
+}

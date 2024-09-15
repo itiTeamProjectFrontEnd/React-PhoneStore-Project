@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Final_ITI_Project/static/css/main.7865b435.css",
+    "main.js": "/Final_ITI_Project/static/js/main.f0b051a7.js",
+    "static/js/787.b3d32539.chunk.js": "/Final_ITI_Project/static/js/787.b3d32539.chunk.js",
+    "static/media/shelf2.png": "/Final_ITI_Project/static/media/shelf2.817c9d5ed238f3638ce8.png",
+    "static/media/fa-solid-900.ttf": "/Final_ITI_Project/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/saloma.jpg": "/Final_ITI_Project/static/media/saloma.34e945b2a63c77f4690f.jpg",
+    "static/media/fa-brands-400.ttf": "/Final_ITI_Project/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/khokha.jpg": "/Final_ITI_Project/static/media/khokha.5fa1dd131a8f89f201b8.jpg",
+    "static/media/fa-solid-900.woff2": "/Final_ITI_Project/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/mysef.jpg": "/Final_ITI_Project/static/media/mysef.f0b373894673d629a65f.jpg",
+    "static/media/fa-brands-400.woff2": "/Final_ITI_Project/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/book-mockup2.png": "/Final_ITI_Project/static/media/book-mockup2.0826fcf0b397b44d658d.png",
+    "static/media/market.png": "/Final_ITI_Project/static/media/market.de0cfcf3fd408e19d75a.png",
+    "static/media/norty.jpg": "/Final_ITI_Project/static/media/norty.870a46fa46ac6485c0de.jpg",
+    "static/media/fa-regular-400.ttf": "/Final_ITI_Project/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/aboutus.jpg": "/Final_ITI_Project/static/media/aboutus.1b51105482b292402d0b.jpg",
+    "static/media/books.png": "/Final_ITI_Project/static/media/books.200be8398918884a1282.png",
+    "static/media/fa-regular-400.woff2": "/Final_ITI_Project/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Final_ITI_Project/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Final_ITI_Project/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/Final_ITI_Project/index.html",
+    "main.7865b435.css.map": "/Final_ITI_Project/static/css/main.7865b435.css.map",
+    "main.f0b051a7.js.map": "/Final_ITI_Project/static/js/main.f0b051a7.js.map",
+    "787.b3d32539.chunk.js.map": "/Final_ITI_Project/static/js/787.b3d32539.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7865b435.css",
+    "static/js/main.f0b051a7.js"
+  ]
+}

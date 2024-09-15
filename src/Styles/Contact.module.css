@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  animation: fadeInSlideUp 3s ease-in-out;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: 0.3s
+}
+
+.card:hover {
+  transform: translateY(-24px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); 
+}
+
+.teamImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 3px solid #eaeaea;
+
+}
+.teamImg img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  text-align: center;
+  color:#1f2478;
+}
+
+.social {
+ 
+  margin-top: 10px;
+}
+
+.social a {
+  color:#1f2478;
+  margin: 0 10px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.social a:hover {
+  color:#d18ef4; /* Example: LinkedIn blue on hover */
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1em;
+  color:#1f2478;
+}
+
+.header{padding-top: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  /* background-color: aquamarine; */
+  align-items: center;
+}
+card .kolo{
+  background-color:#f3f3f3 ;
+}
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1  {
+  color: #1f2478;
+  font-weight: 700;
+
+
+  line-height: 55px;
+  letter-spacing: -0.65px;
+  animation: fadeInSlideUp 1s ease-out;
+}
+/* ****************about website************** */
+
+/* Define zoom-in animation */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply the zoom-in animation to the card */
+.cardZoomAnimation {
+  animation: zoomIn 1s ease-out;
+}
+
+.kolo {
+  background-color: #9f2929; /* Change this to your desired background color */
+}
+

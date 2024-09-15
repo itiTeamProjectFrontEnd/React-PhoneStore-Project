@@ -1,0 +1,186 @@
+.bkg {
+  align-self: center;
+  padding: auto;
+  margin: auto;
+}
+
+.imgcard {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.parentt {
+  padding-top: 250px;
+  flex: 40%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 60px;
+  color:  #1f2478;
+  line-height: 1.3;
+}
+
+.par {
+
+  font-size: 18px;
+  color:rgb(148, 147, 147);
+  text-align: left;
+
+  
+}
+.dimgg{
+  flex: 60%;
+}
+.imgg{
+  width:100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  justify-content: space-around;
+  background-color:#f3f3f3 ;
+}
+
+.about img {
+  width: 440px;
+  height: 370px;
+  margin-bottom: 50px;
+}
+
+.prdct {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  color: #1f2478 !important;
+}
+
+.link3 {
+  display: inline-block;
+  /* width: 20%; */
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  margin-top: 20px;
+  padding: 13px 17px;
+  border: 0;
+  background-color:#d18ef4;
+ 
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s;
+  border-radius: 3px;
+
+}
+
+.link3:hover {
+  transform: translateY(-10px);
+}
+
+.link2 {
+  text-decoration: none;
+  color: #1f2478;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.link2:hover {
+  text-decoration: underline;
+  transform: translateY(-10px);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.h3text {
+
+  font-size: 2.5rem;
+  color: #1f2478;
+  font-weight: 600;
+  text-align: center;
+}
+
+.textp {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 20px;
+  color: 969696;
+}
+.whychooseus{
+  background-color: #f3f3f3 ;
+}
+.cardds {
+  display: flex;
+  justify-content: space-around;
+  color: #1f2478;
+}
+.cardh{
+  font-weight: bold;
+}
+.cardcont {
+  width: 22%;
+  border-radius: 10px;
+  color:#1f2478;
+  font-size: 1.1rem;
+ 
+}
+
+@media(max-width: 768px) {
+  .parentt {
+    padding-top: 110px;
+
+  }
+
+  .imgcard {
+    height: 500px;
+    ;
+  }
+
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    margin-bottom: 30px;
+  }
+
+  .about img {
+    align-self: center;
+  }
+
+  .cardds {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardcont {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .imgcard {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+}
+
+
+p{
+  font-family: Open Sans;
+}

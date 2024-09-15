@@ -1,0 +1,93 @@
+.link {
+  text-decoration: none;
+  list-style-type: none;
+  color: #222671;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+  color: #d18ef4;
+  transform: scale(1.1);
+}
+
+
+
+.navbartoggler {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbartoggler:hover {
+  transform: scale(1.08);
+  background-color: #e0e0e0 !important;
+}
+
+li {
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.cartItemCount {
+  background-color: #222671;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.cartItemCount:hover {
+  transform: translate(50%, -50%) scale(1.1);
+}
+
+nav{
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Small shadow */
+}
+.notScrolled {
+  transition: 0.3s;
+  padding: 14px 0;
+}
+.scrolled{
+  transition: 0.3s;
+  padding: 9px 0;
+}
+.logoName{
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: #222671;
+
+}
+.box{
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Small shadow */
+  width: 180px;
+
+}
+
+.toggleExpand{
+  cursor: pointer;
+}
+
+@media(max-width: 992px) {
+  .roro{
+    flex-direction: column !important; 
+  }
+}
