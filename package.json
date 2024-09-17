@@ -1,7 +1,7 @@
 {
   "name": "finalproject",
   "version": "0.1.0",
-  "homepage": "https://RewaaGaber.github.io/Final_ITI_Project",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
