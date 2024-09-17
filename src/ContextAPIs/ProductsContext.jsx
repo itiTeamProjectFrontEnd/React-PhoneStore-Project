@@ -15,34 +15,34 @@ export const ProductsContextProvider = (props) => {
 
   const getProducts = () => {
     axios
-      .get("http://localhost:5000/products")
+      .get("http://localhost:3004/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   };
 
   const getProductById = (productId) => {
     axios
-      .get(`http://localhost:5000/products/${productId}`)
+      .get(`http://localhost:3004/products/${productId}`)
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   };
 
   const deleteProduct = (productId) => {
     axios
-      .delete(`http://localhost:5000/products/${productId}`)
+      .delete(`http://localhost:3004/products/${productId}`)
       .then(() => getProducts())
       .catch((err) => console.log(err));
   };
 
   const addProduct = (product) => {
-    axios.post(`http://localhost:5000/products`, product)
+    axios.post(`http://localhost:3004/products`, product)
       .then(() => {
         getProducts();
       })
       .catch((err) => console.log(err));
   };
   const editProduct = (id,product) => {
-    axios.patch(`http://localhost:5000/products/${id}`, product)
+    axios.patch(`http://localhost:3004/products/${id}`, product)
       .then(() => {
         getProducts();
       })
@@ -53,14 +53,14 @@ export const ProductsContextProvider = (props) => {
 
   const getUserSpecificOrders = () => {
     // Fetch orders specific to the logged-in user
-    return axios.get(`http://localhost:5000/orderItem?userId=${userId}`)
+    return axios.get(`http://localhost:3004/orderItem?userId=${userId}`)
       .then(res => res.data)
       .catch(err => console.log(err));
   };
 
    const fetchCartItems = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/orderItem`);
+      const response = await axios.get(`http://localhost:3004/orderItem`);
       console.log(response.data.length);
       setNumOfitems(response.data.length)
       return response.data;
@@ -71,17 +71,17 @@ export const ProductsContextProvider = (props) => {
    }
    const addItem = async (title, price, image) => {
     
-    const result = await axios.get("http://localhost:5000/orderItem");
+    const result = await axios.get("http://localhost:3004/orderItem");
     const existingItem = result.data.find(item => item.title === title);
     
     if (existingItem) {
       // Update quantity of the existing item
       existingItem.qty += 1;
-      await axios.put(`http://localhost:5000/orderItem/${existingItem.id}`, existingItem);
+      await axios.put(`http://localhost:3004/orderItem/${existingItem.id}`, existingItem);
     } else {
       // Add a new item to the cart
       const order = { title, price, qty: 1, image };
-      await axios.post("http://localhost:5000/orderItem", order);
+      await axios.post("http://localhost:3004/orderItem", order);
       
     }
     await fetchCartItems()

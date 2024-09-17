@@ -94,7 +94,7 @@ const Signin = () => {
         address,
       };
 
-      fetch("http://localhost:5000/User", {
+      fetch("http://localhost:3004/User", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(regObj),

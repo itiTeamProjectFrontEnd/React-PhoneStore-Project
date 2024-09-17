@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import ProductsContext from "../ContextAPIs/ProductsContext";
 
 const Profile = () => {
-  // const productsUrl = "http://localhost:5000/orderItem";
+  // const productsUrl = "http://localhost:3004/orderItem";
   const [items, setItems] = useState([]);
   const [total, setTotal] = useState(0);
   const [formData, setFormData] = useState({
@@ -47,7 +47,7 @@ const Profile = () => {
     );
     if (isDelete) {
       try {
-        await axios.delete(`http://localhost:5000/orderItem/${id}`);
+        await axios.delete(`http://localhost:3004/orderItem/${id}`);
         const userId = localStorage.getItem("userId");
         loadItems(userId);
       } catch (error) {
@@ -76,7 +76,7 @@ const Profile = () => {
     if (isCheckout) {
       try {
         for (let item of items) {
-          await axios.delete(`http://localhost:5000/orderItem/${item.id}`);
+          await axios.delete(`http://localhost:3004/orderItem/${item.id}`);
         }
         setItems([]);
         setTotal(0);
@@ -124,7 +124,7 @@ const Profile = () => {
 
     const order = { title, price, qty: newQty, image, userId: localStorage.getItem("userId") };
     try {
-      await axios.put(`http://localhost:5000/orderItem/${id}`, order);
+      await axios.put(`http://localhost:3004/orderItem/${id}`, order);
       const userId = localStorage.getItem("userId");
       loadItems(userId);
     } catch (error) {

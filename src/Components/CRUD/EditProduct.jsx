@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useId, useState, useRef, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Alert } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
 
 
@@ -24,7 +23,7 @@ function EditProducts() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/products/${id}`);
+        const res = await axios.get(`http://localhost:3004/products/${id}`);
         setPrdct(res.data);
       } catch (err) {
         console.log(err);
@@ -45,7 +44,7 @@ function EditProducts() {
     e.preventDefault();
 
     try {
-      await axios.patch(`http://localhost:5000/products/${prdct.id}`, prdct);
+      await axios.patch(`http://localhost:3004/products/${prdct.id}`, prdct);
       toast.success("Product Edited Successfully", {
         position: "bottom-right",
         theme: "light",
