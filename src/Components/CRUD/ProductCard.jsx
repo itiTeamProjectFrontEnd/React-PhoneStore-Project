@@ -58,18 +58,18 @@ export default function ProductCard({
           </Link>
         </div>
         <div className={"card-body text-center"}>
-          <h5 className={`card-title ${style.head}`}>{product.title}</h5>
+          <h5 className={`card-title ${style.head}`}>{product.name}</h5>
           <p className={`card-text text-dark fw-bold`}>
             ${(
               product.price -
-              (product.price * product.discountPercentage) / 100
+              (product.price * product.discount) / 100
             ).toFixed(2)}
-            {product.discountPercentage > 0 && (
+            {product.discount > 0 && (
               <span className={style.discount}>$ {product.price}</span>
             )}
           </p>
           <p className={`card-text text-dark fw-bold`}>
-            {product.category}
+            {product.brand}
           </p>
           {localStorage.getItem('username') === 'rewaa' && (
             <Link to={`/edit/${product.id}`} className={`btn btn-dark px-5 ${style.pbtn}`}>
@@ -79,7 +79,7 @@ export default function ProductCard({
           <button
             className={`btn btn-dark w-50 mx-auto ms-1 ${style.pbtn}`}
             onClick={() =>
-              addItemToCart(product.title, product.price, product.thumbnail)
+              addItemToCart(product.na, product.price, product.thumbnail)
             }
           >
             Add To Cart

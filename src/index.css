@@ -3,13 +3,13 @@ body {
 
 }
 .bg-main{
-  background-color: #222671 !important;
+  background-color: #1E90FF !important;
 }
 .bg-gray{
-  background-color: #F8F9FA;
+  background-color: #ffffff;
 }
 .text-main{
-  color: #222671 !important;
+  color: #1E90FF !important;
 }
 .navbar-toggler:focus{
   box-shadow: none !important;

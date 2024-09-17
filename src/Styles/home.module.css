@@ -5,38 +5,54 @@
 }
 
 .imgcard {
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+   background-image: url(../Images/gphoto.jpg);
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   height: 640px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.588); /* Adjust transparency */
+  z-index: 1;
 }
 
 .parentt {
-  padding-top: 250px;
-  flex: 40%;
+  position: relative;
+  z-index: 100;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 150px;
+  margin: auto; 
 }
 
 .title {
   font-weight: bold;
-  font-size: 60px;
-  color:  #1f2478;
+  font-size: 68px;
+  color:  #ffffff;
   line-height: 1.3;
+  z-index: 100;
 }
 
 .par {
 
   font-size: 18px;
-  color:rgb(148, 147, 147);
-  text-align: left;
-
+  color:#f99746;
+  text-align: center;
   
 }
 .dimgg{
-  flex: 60%;
+  flex: 100%;
 }
 .imgg{
   width:100%;
   height: 85vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .about {
@@ -45,7 +61,7 @@
   justify-content: center;
   padding-top: 100px;
   justify-content: space-around;
-  background-color:#f3f3f3 ;
+  background-color:rgb(237, 245, 255) ;
 }
 
 .about img {
@@ -57,8 +73,9 @@
 .prdct {
   display: flex;
   align-content: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   color: #1f2478 !important;
+  text-align: center;
 }
 
 .link3 {
@@ -71,7 +88,7 @@
   margin-top: 20px;
   padding: 13px 17px;
   border: 0;
-  background-color:#d18ef4;
+  background-color:#f99746;
  
   font-size: 20px;
   font-weight: bold;
@@ -86,11 +103,15 @@
 
 .link2 {
   text-decoration: none;
-  color: #1f2478;
+  color:#16023f;
   margin-top: 5px;
   font-size: 20px;
   font-weight: bold;
   transition: all 0.5s;
+  position: relative;
+  /* align-items:right;
+  justify-content: end; */
+  text-align: right;
 }
 
 .link2:hover {
@@ -107,7 +128,7 @@
 .h3text {
 
   font-size: 2.5rem;
-  color: #1f2478;
+  color:#16023f;
   font-weight: 600;
   text-align: center;
 }
@@ -119,12 +140,12 @@
   color: 969696;
 }
 .whychooseus{
-  background-color: #f3f3f3 ;
+  background-color: #ffffff ;
 }
 .cardds {
   display: flex;
   justify-content: space-around;
-  color: #1f2478;
+  color: #16023f;
 }
 .cardh{
   font-weight: bold;
@@ -132,7 +153,7 @@
 .cardcont {
   width: 22%;
   border-radius: 10px;
-  color:#1f2478;
+  color:#16023f;
   font-size: 1.1rem;
  
 }

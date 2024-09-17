@@ -2,8 +2,7 @@ import React , {useState,useEffect, useContext}from "react";
 import { Link } from "react-router-dom";
 import style from "../../Styles/Navbar.module.css";
 import books from "../../Images/books.png";
-import logo from '../../Images/logo3.png'
-
+import logo from "../../Images/mobile-store-ecommerce-svgrepo-com.png";
 import ProductsContext from "../../ContextAPIs/ProductsContext";
 
 
@@ -54,9 +53,14 @@ export default function Navbar({ isLogin, setIsLogin }) {
           <img 
             src={logo}
             alt=""
-            width="150px"
+            width="60px"
           />
         </Link>
+        <Link className="navbar-brand" to="/Home"
+                aria-current="page"
+              >
+                <h3 className={style.logonav}>Tech Haven</h3>
+              </Link>
       <span className="text-light">
 </span>
         <button
@@ -83,12 +87,12 @@ export default function Navbar({ isLogin, setIsLogin }) {
             </li>
             <li className="nav-item">
               <Link className={`${style.link} text-decoration-none`} to="/shop">
-                Books
+                Phones
               </Link>
             </li>
 
             {/* !!!!!!!very importaaaaaaaaaaty focus (admin access) */}
-            {localStorage.getItem("username") === "rewaa" ? (
+            {localStorage.getItem("username") === "Abdelrahman" ? (
               <li className="nav-item">
                 <Link
                   to="/addProduct"
@@ -161,7 +165,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
                 <li className="nav-item my-lg-0 my-3">
                     <Link
                       to="/Login"
-                      className={`${style.link} text-decoration-none me-3`}
+                      className={`${style.link1} text-decoration-none me-3`}
                     >
                       Sign In
                     </Link>

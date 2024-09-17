@@ -9,14 +9,14 @@ function Shop() {
   const { products, getProducts, deleteProduct } = useContext(ProductContext);
 
 
-  const uniqueCategories = [...new Set(products.map(product => product.category))];
+  const uniqueCategories = [...new Set(products.map(product => product.brand))];
 
   console.log("Unique categories:", uniqueCategories);
 
   const filteredProducts = products.filter((product) => {
     const matchesSearchTerm =
-      searchTerm === "" || product.title.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === "" || product.category === selectedCategory;
+      searchTerm === "" || product.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesCategory = selectedCategory === "" || product.brand === selectedCategory;
     return matchesSearchTerm && matchesCategory;
   });
   return (

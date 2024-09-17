@@ -1,182 +1,192 @@
 {
   "products": [
     {
-      "id": "35",
-      "title": " The Lantern of Lost Memories",
-      "description": "There is a stack of photos on their lap, one for every day of their life, and now they must choose the pictures that capture their most treasured memories, which will be placed in a beautiful lantern. Once completed, it will be set spinning, and their cherished moments will flash before their eyes, guiding them to another world.",
-      "price": 34,
-      "discountPercentage": 12.96,
-      "rating": 4.7,
-      "stock": 68,
-      "category": "fiction",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/IMG-0742.jpg?v=1723547578&width=713"
-    },
-    {
-      "id": "37",
-      "title": " The Box in the Woodss",
-      "description": "There is a stack of photos on their lap, one for every day of their life, and now they must choose the pictures that capture their most treasured memories, which will be placed in a beautiful lantern. Once completed, it will be set spinning, and their cherished moments will flash before their eyes, guiding them to another world.",
-      "price": "55",
-      "discountPercentage": 12.96,
-      "rating": 4.7,
-      "stock": "63",
-      "category": "History",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofBookworldMockup_4_b94c1f06-03df-4cf6-860b-e33830dbe236.png?v=1723632980&width=713"
-    },
-    {
-      "id": "39",
-      "title": "Once Upon A Broken Heart w",
-      "description": "Make a wish . 'An unputdownable fairy tale' Kerri Maniscalco, New York Times bestselling author of Kingdom of the Wicked From the #1 Sunday Times bestselling author of the Caraval series, the first book in a new series about love, curses, and the lengths that people will go to for happily ever after.",
-      "price": 48.5,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "category": "fiction",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/image_590e1248-fb4c-414c-a1b9-f3c8c3b41524.jpg?v=1688598704&width=713"
-    },
-    {
-      "id": "50",
-      "title": "King of Pride (Kings of Sin #2) Ana Huang",
-      "description": "Reserved, controlled, and proper to a fault, Kai Young has neither the time nor inclination for chaos—and Isabella, with her purple hair and inappropriate jokes, is chaos personified.",
-      "price": 65.55,
-      "discountPercentage": 12.96,
-      "rating": 4.23,
-      "stock": 94,
-      "category": "romance",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofPRE-ORDER-2023-11-09T043042.597.png?v=1699533057&width=713"
-    },
-    {
-      "id": "51",
-      "title": "The Predator (Dark Verse #1) ",
-      "description": "In the dark underbelly of the mob, Tristan Caine has been an anomaly. As the only non-blooded member in the high cirdle of the Tenebrae Outft, he is an enigma to all - his skils unparalleled, his morality questionable, and his motives unknown. He is lethal and he knows it.",
-      "price": 86.33,
-      "discountPercentage": 12.96,
-      "rating": 4.5,
-      "stock": 94,
-      "category": "crime",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/image_9d6faa8f-04d2-47c4-b531-f387bcc62c6c.jpg?v=1687896241&width=713"
-    },
-    {
-      "id": "40",
-      "title": "A Study in Drowning by Ava Reid",
-      "description": "Effy Sayre has always believed in fairy tales. Haunted by visions of the Fairy King since childhood, she's had no choice. Her tattered copy of Angharad--Emrys Myrddin's epic about a mortal girl who falls in love with the Fairy King, then destroys him--is the only thing keeping her afloat. So when Myrddin's family announces a contest to redesign the late author's estate, Effy feels certain it's her destiny.",
-      "price": 100.9,
-      "discountPercentage": 10.96,
+      "id": "1",
+      "name": "iPhone 14 Pro",
+      "brand": "Apple",
+      "price": 999.99,
+      "discount": 10,
+      "stock": 50,
+      "category": "smartphone",
       "rating": 4.8,
-      "stock": 90,
-      "category": "mystry/thriller",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/IMG-5381.jpg?v=1695748533&width=713"
+      "thumbnail": "https://www.imagineonline.store/cdn/shop/files/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1b__WWEN.jpg?v=1692348974&width=823"
     },
     {
-      "id": "41",
-      "title": "Bunny by Mona Awad (Paperback)",
-      "description": "Samantha Heather Mackey couldn't be more of an outsider in her small, highly selective MFA program at New England's Warren University. A scholarship student who prefers the company of her dark imagination to that of most people, she is utterly repelled by the rest of her fiction writing cohort--a clique of unbearably twee rich girls who call each other Bunny, and seem to move and speak as one",
-      "price": 79.99,
-      "discountPercentage": 11.96,
-      "rating": 5.69,
-      "stock": 97,
-      "category": "mystry/thriller",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/IMG-2092.jpg?v=1690933099&width=713"
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "brand": "Samsung",
+      "price": 899.99,
+      "discount": 15,
+      "stock": 40,
+      "category": "smartphone",
+      "rating": 4.7,
+      "thumbnail": "https://ennap.com/cdn/shop/files/sa-galaxy-s23-fe-s711-sm-s711blgbmea-538530385.png?v=1703527799"
     },
     {
-      "id": "42",
-      "title": "The Brothers Hawthorne",
-      "description": "Grayson Hawthorne was raised as the heir apparent to his billionaire grandfather, taught from the cradle to put family first. So when Grayson's half-sisters find themselves in trouble, he's determined to care of the problem - efficiently, effectively, mercilessly. And without getting emotionally involved.",
-      "price": 68,
-      "discountPercentage": 12.96,
-      "rating": 5.69,
-      "stock": 92,
-      "category": "mystry/thriller",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/IMG-3237.jpg?v=1693149218&width=713"
+      "id": "3",
+      "name": "Google Pixel 7",
+      "brand": "Google",
+      "price": 799.99,
+      "discount": 20,
+      "stock": 30,
+      "category": "smartphone",
+      "rating": 4.6,
+      "thumbnail": "https://cdn.dxomark.com/wp-content/uploads/drafts/post-101924/Google-Pixel-6-featured-image-packshot-review-Recovered-1024x691-1.jpeg"
     },
     {
-      "id": "43",
-      "title": "A Monster Calls by Patrick Ness",
-      "description": "Conor has the same dream every night, ever since his mother first fell ill, ever since she started the treatments that don't quite seem to be working. But tonight is different. Tonight, when he wakes, there's a visitor at his window. It’s ancient, elemental, a force of nature. And it wants the most dangerous thing of all from Conor. It wants the truth. Patrick Ness takes the final idea of the late, award-winning writer Siobhan Dowd and weaves an extraordinary and heartbreaking tale of mischief, healing and above all, the courage it takes to survive",
-      "price": 50,
-      "discountPercentage": 10.96,
-      "rating": 5.69,
-      "stock": 98,
-      "category": "action",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofBookworldMockup_36_6dd91935-d1b4-4fb0-93c2-2adb788928ce.png?v=1716409690&width=713"
+      "id": "4",
+      "name": "OnePlus 9",
+      "brand": "OnePlus",
+      "price": 729,
+      "discount": 8,
+      "rating": 4.4,
+      "stock": 60,
+      "category": "smartphone",
+      "thumbnail": "https://images.shopkees.com/uploads/cdn/images/1000/3907630486_1618069523.jpg"
     },
     {
-      "id": "44",
-      "title": "The Housmaid is Watching",
-      "description": "I used to clean other people's houses―now, I can't believe this home is actually mine. The charming kitchen, the quiet cul-de-sac, the huge yard where my kids can play. My husband and I saved for years to give our children the life they deserve.",
-      "price": "81",
-      "discountPercentage": "13.96",
-      "rating": 6.69,
-      "stock": 91,
-      "category": "crime",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofBookworldMockup-2024-07-04T232245.206.png?v=1720120997&width=713"
+      "id": "5",
+      "name": "OnePlus 10",
+      "brand": "OnePlus",
+      "price": 739.7,
+      "discount": 12,
+      "stock": 45,
+      "category": "smartphone",
+      "rating": 4.5,
+      "thumbnail": "https://oasis.opstatics.com/content/dam/oasis/page/2022/operation/mar/0317/EU-IN_Green.png"
     },
     {
-      "id": "45",
-      "title": "rewaa Lose Kill Die by Cynthia",
-      "description": "views and counting... From the author of Last One To Die. The students at Morton Academy are high-achievers, selected based .on academic excellence. So when a series of murders target the. school's brightest and best, the pressure is on. Someone is determined .to stop at nothing to clear their path to the top. But who??",
-      "price": 80.9,
-      "discountPercentage": 12.96,
-      "rating": 5.59,
-      "stock": 90,
-      "category": "crime",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/Used_5.png?v=1712413486&width=713"
+      "id": "6",
+      "name": "OnePlus 11",
+      "brand": "OnePlus",
+      "price": 749.99,
+      "discount": 12,
+      "stock": 45,
+      "category": "smartphone",
+      "rating": 4.5,
+      "thumbnail": "https://www.apollo.pl/gfx/apollo/_thumbs/sklep_oferta/000/273/992/4,rH17n6ummWegVo8.jpg"
     },
     {
-      "id": "46",
-      "title": "The Girls Who Disappeared",
-      "description": "Twenty years ago: One rainy night, Olivia Rutherford is driving three friends home when a figure in the road causes her to swerve and crash. Regaining consciousness, she finds herself alone in the car - her friends have vanished.",
-      "price": 54.94,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "category": "crime",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofBookworldMockup-2024-06-28T203031.038.png?v=1719592267&width=713"
+      "id": "7",
+      "name": "iPhone 13 Pro",
+      "brand": "Apple",
+      "price": 999,
+      "discount": 5,
+      "rating": 4.8,
+      "stock": 30,
+      "category": "smartphone",
+      "thumbnail": "https://compasia.com.ph/cdn/shop/files/iphone-13-pro-max-328530_600x.png?v=1717653202"
     },
     {
-      "id": "47",
-      "title": "No One Saw it Coming by Susan Lewis",
-      "description": "An unimaginable crime has been committed, and everyone’s looking for someone to blame. Her loved ones are under suspicion.",
-      "price": 54.9,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "category": "crime",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofBookworldMockup_40_b2dab58e-f579-4143-b7e0-7b19764411e3.png?v=1716410389&width=713"
+      "id": "8",
+      "name": "Samsung Galaxy S21",
+      "brand": "Samsung",
+      "price": 799,
+      "discount": 7,
+      "rating": 4.6,
+      "stock": 50,
+      "category": "smartphone",
+      "thumbnail": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-g990bza4ins/gallery/in-galaxy-s21-fe-g990-464368-sm-g990bza4ins-537060677?$650_519_PNG$"
     },
     {
-      "id": "48",
-      "title": "Hollow Heathens: Book of Blackwell",
-      "description": "From Susan Dennard, the New York Times bestselling author of the Witchlands series, comes a haunting and high-octane contemporary fantasy about the magic it takes to face your fears in a nightmare-filled forest and the mettle required to face the secrets hiding in the dark corners of your own family.",
-      "price": 55.99,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "category": "horror",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/image_150a4245-3d0a-4d54-82e4-42be85df7332.jpg?v=1687797780&width=713"
+      "id": "9",
+      "name": "Google Pixel 6",
+      "brand": "Google",
+      "price": 699,
+      "discount": 6,
+      "rating": 4.5,
+      "stock": 40,
+      "category": "smartphone",
+      "thumbnail": "https://www.clove.co.uk/cdn/shop/products/google-pixel-6-pro-cloudy-white-back_1200x.png?v=1665058279"
     },
     {
-      "id": "49",
-      "title": "A Court This Cruel and Lovely",
-      "description": "Just hours after humans are born, the gods take what little power we have. In return, they protect our borders from the vicious, merciless fae. The humans who manage to keep their power are known as the corrupt. And they are put to death.",
-      "price": 90.9,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "category": "fantasy",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/CopyofBookworldMockup-2024-06-28T210547.849.png?v=1719594369&width=713"
+      "id": "11",
+      "name": "Xiaomi Mi 11",
+      "brand": "Xiaomi",
+      "price": 749,
+      "discount": 9,
+      "rating": 4.6,
+      "stock": 70,
+      "category": "smartphone",
+      "thumbnail": "https://dynamic.zacdn.com/c4dSOhZeLlp5ykXQBP8BOfnpCw8=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/xiaomi-4812-7421912-1.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Sony Xperia 5 II",
+      "brand": "Sony",
+      "price": 949,
+      "discount": 5.5,
+      "rating": 4.7,
+      "stock": 25,
+      "category": "smartphone",
+      "thumbnail": "https://sony.scene7.com/is/image/sonyglobalsolutions/1640-primary_image_1200-2?$S7Product$&fmt=png-alpha"
+    },
+    {
+      "id": "13",
+      "name": "Oppo Find X3 Pro",
+      "brand": "Oppo",
+      "price": 899,
+      "discount": 10,
+      "rating": 4.5,
+      "stock": 40,
+      "category": "smartphone",
+      "thumbnail": "https://www.cect-shop.com/media/catalog/products/f/90824/61440b0401/Oppo-Find-X3-Pro-Photographers-Edition-CECT-6.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Huawei P40 Pro",
+      "brand": "Huawei",
+      "price": 799,
+      "discount": 7,
+      "rating": 4.4,
+      "stock": 35,
+      "category": "smartphone",
+      "thumbnail": "https://bnwcollections.com/uploads/products/galleries/uvFRHuawei-P40-Pro-blue_11zon.webp"
+    },
+    {
+      "id": "15",
+      "name": "Nokia X20",
+      "brand": "Nokia",
+      "price": 499,
+      "discount": 6,
+      "rating": 4.3,
+      "stock": 45,
+      "category": "smartphone",
+      "thumbnail": "https://www.buyitdirect.ie/Images/101QKSLVH016_2_Supersize.jpg?v=31"
+    },
+    {
+      "id": "16",
+      "name": "Motorola Edge 20",
+      "brand": "Motorola",
+      "price": 599,
+      "discount": 7.5,
+      "rating": 4.5,
+      "stock": 50,
+      "category": "smartphone",
+      "thumbnail": "https://www.wirelessplace.com/cdn/shop/files/157620-1200-auto_1024x1024.png?v=1715273356"
+    },
+    {
+      "id": "sh33arj",
+      "title": "xiaoma",
+      "price": "1000",
+      "discountPercentage": "20",
+      "description": "dsfmav",
+      "stock": "2",
+      "thumbnail": "https://bookworlduae.com/cdn/shop/files/image_150a4245-3d0a-4d54-82e4-42be85df7332.jpg?v=1687797780&width=713",
+      "category": "xiaomi"
     }
   ],
   "orderItem": [],
   "User": [
     {
-      "id": "rewaa",
-      "name": "RewaaGaber",
+      "id": "Abdelrahman",
+      "name": "Abdelrahman",
       "password": "123",
-      "email": "RewaaGaber@gmail.com",
+      "email": "Abdelrahman@gmail.com",
       "phone": "894745",
       "country": "Egypt",
       "address": "hello",
-      "gender": "female",
+      "gender": "male",
       "role": "admin"
     },
     {
@@ -188,87 +198,6 @@
       "country": "india",
       "address": "hello",
       "gender": "female"
-    },
-    {
-      "id": "nour",
-      "name": "nour",
-      "password": "1233",
-      "email": "nour@gmail.com",
-      "phone": "1029924804",
-      "country": "usa",
-      "address": "damitta",
-      "gender": "female"
-    },
-    {
-      "id": "Khoulod",
-      "name": "Khoulod",
-      "password": "Khoulod",
-      "email": "Khoulod@gmail.com",
-      "phone": "1029924804",
-      "country": "Egypt",
-      "address": "damitta",
-      "gender": "female"
-    },
-    {
-      "id": "Nadia",
-      "name": "Nadia",
-      "password": "Nadia",
-      "email": "Nadia@gmail.com",
-      "phone": "01029924804",
-      "country": "Egypt",
-      "address": "mansoura",
-      "gender": "female"
-    },
-    {
-      "id": "rola",
-      "name": "ROLA GABER",
-      "password": "123456",
-      "email": "rola.gaber460@gmail.com",
-      "phone": "01093664769",
-      "country": "india",
-      "address": "kfs",
-      "gender": "female"
-    },
-    {
-      "id": "rewaa",
-      "password": "123",
-      "email": "123@gmail.com"
-    },
-    {
-      "id": "rewaa",
-      "password": "123456789Rr",
-      "email": "rewaa@gmail.com"
-    },
-    {
-      "id": "rolaa",
-      "password": "147147",
-      "email": "rolaa@gmail.com"
-    },
-    {
-      "id": "khokha",
-      "password": "123456789",
-      "email": "khokha@gmail.com"
-    },
-    {
-      "id": "Rewaagaber",
-      "password": "123456789Rr@",
-      "email": "Rewaagaber@gmail.com",
-      "phone": "010589255267",
-      "address": ""
-    },
-    {
-      "id": "rewaaarafa",
-      "password": "123456789Qq@",
-      "email": "rewaaarafa@gmail.com",
-      "phone": "01052858538",
-      "address": ""
-    },
-    {
-      "id": "salmaa",
-      "password": "123456789Salma@",
-      "email": "salma@gmail.com",
-      "phone": "01010402866",
-      "address": ""
     }
   ]
 }

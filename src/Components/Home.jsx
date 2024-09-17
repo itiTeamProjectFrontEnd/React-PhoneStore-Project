@@ -2,12 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "../Styles/home.module.css";
 import main from "../Styles/shop.module.css";
-import header from "../Images/book-mockup2.png"
-import image2 from "../Images/shelf2.png";
-import quality from "../Images/quality.png";
-import lover from "../Images/book-lover.png";
-import coll from "../Images/coll.png";
-import oth from "../Images/oth.png";
+import image2 from "../Images/mopp.svg";
+import quality from "../Images/quality.svg";
+import testimonial from "../Images/testimonial.svg";
+import customer from "../Images/customer.svg";
+import warranty from "../Images/warranty.svg";
 import ProductCard from "../Components/CRUD/ProductCard";
 import PostsContext from "../ContextAPIs/ProductsContext";
 
@@ -17,40 +16,30 @@ export default function Home() {
 
   const topProducts = products?.slice(0, 3);
 
+  const headerStyle = {
+  };
+
+
   return (
-    <div className={style.bkg}>
-      <div className={`container ${style.imgcard}`}>
+    <div className={style.bkg} >
+      <div className={` ${style.imgcard}`}>
+      <div className={style.overlay}></div>
         <div className={`${style.parentt} col-md-5`}>
           <h1 className={`${style.title} text-uppercase`}>
-            welcome to our BookShop
+           Welcome to our store
           </h1>
           <p className={`${style.par}`}>Your one-stop destination for quality products</p>
-        </div>
-        <div className={`col-md-7 ${style.dimgg}`}>
-          <img src={header} className={`${style.imgg}`} alt="books" />
-        </div>
-      </div>
-      <div className={style.about}>
-        <img src={image2} alt="A decorative shelf with books" class='col-md-7' />
-        <div className={style.text} class='col-md-5 contianer'>
-          <h3 className={style.h3text}>
-            Who Are We?
-          </h3>
-          <p className={style.textp}>
-            At BookHup, we believe that every book is a gateway to a new adventure,
-            a different perspective, and a world of imagination. our bookstore is more 
-            than just a place to buy books—it's a community hub for book lovers, readers,
-            and lifelong learners.
-          </p>
           <div className=" text-center">
-            <Link className={style.link3} to="/Shop">Shop Now</Link>
+            <Link className={style.link3} to="/Shop">Explore Now</Link>
           </div>
         </div>
-      </div>
+            </div>
+
+
+     
       <div className={`container m-auto p-5 mb-5`}>
-        <div className={`${style.prdct}`}>
+        <div >
           <h1 className={`text-center mb-5`}>Our Products</h1>
-          <Link className={`${style.link2}`} to="/Shop">Show More</Link>
         </div>
         <div className="row g-4 justify-content-between">
           {topProducts?.map((prodcutItem) => (
@@ -62,36 +51,60 @@ export default function Home() {
             />
           ))}
         </div>
+        <div className=" text-center">
+            <Link className={`${style.link3} mt-4`} to="/Shop">Explore More Products</Link>
+          </div>
       </div>
+
+      <div className={style.about}>
+        <img src={image2} alt="A decorative shelf with books" class='col-md-7' />
+        <div className={style.text} class='col-md-5 contianer'>
+          <h3 className={style.h3text}>
+           About US
+          </h3>
+          <p className={style.textp}>
+          At Tech Haven, we are committed to bringing you the latest smartphones, accessories,
+           and tech solutions all in one place. With a focus on quality, affordability, and customer satisfaction,
+            we strive to provide the best products and services tailored to your mobile needs.
+           Whether you're upgrading your device or looking for expert advice, we're here to help you stay connected.
+          </p>
+          <div className=" text-center">
+            <Link className={style.link3} to="/Shop">Shop Now</Link>
+          </div>
+        </div>
+      </div>
+
         <div className={`${style.whychooseus} py-5`}>
         <h1 className={`text-center mb-2`}>Why Choose Us?</h1>
         <div className={`card-deck container m-auto p-5 ${style.cardds}`}>
           <div className={`card ${style.cardcont}`}>
             <div class="card-body py-4 text-center">
-              <img src={coll} alt="icons" />
-              <h5 class={`card-title mt-3 ${style.cardh}`}>A Curated Collection for Every Reader</h5>
-              <p class="card-text">we take pride in offering a thoughtfully curated selection of books that cater to a wide range of tastes and interests. a fan of classic literature, modern bestsellers, or niche genres.</p>
+              <img src={customer} alt="icons" />
+              <h5 class={`card-title mt-3 ${style.cardh}`}>24 hours customer service</h5>
+              <p class="card-text">Our dedicated support team is available to assist you with any question from product selection to
+               troubleshooting We pride ourselves on fast response times personalized solutions,, and a hassle-free return policy. With knowledgeable staff and ongoing support,
+                we ensure that every customer enjoys a seamless. </p>
             </div>
           </div>
           <div className={`card ${style.cardcont}`}>
             <div class="card-body py-4 text-center">
-              <img src={lover} alt="icons" />
-              <h5 class={`card-title mt-3 ${style.cardh}`}>A Community of Book Lovers</h5>
-              <p class="card-text">we take pride in offering a thoughtfully curated selection of books that cater to a wide range of tastes and interests. a fan of classic literature, modern bestsellers, or niche genres.</p>
+              <img src={testimonial} alt="icons" />
+              <h5 class={`card-title mt-3 ${style.cardh}`}>testimonial</h5>
+              <p class="card-text">Our customers consistently share positive feedback about our high-quality products, exceptional customer service, and seamless shopping experience. From quick deliveries to expert advice, their reviews reflect the trust and satisfaction we've built over time.</p>
             </div>
           </div>
           <div className={`card ${style.cardcont}`}>
             <div class="card-body py-4 text-center">
               <img src={quality} alt="icons" />
               <h5 class={`card-title mt-3 ${style.cardh}`}>A Commitment to Quality</h5>
-              <p class="card-text">From the quality of the books we stock to the level of service we provide, we are dedicated to ensuring that every visit to our store is a pleasant and enriching experience.</p>
+              <p class="card-text"> We carefully select top-tier smartphones and accessories from trusted brands to ensure reliability and performance. Each product undergoes rigorous testing to meet the highest industry standards, so our customers can enjoy cutting-edge technology with peace of mind. Our commitment to quality means you always get the best.</p>
             </div>
           </div>
           <div className={`card ${style.cardcont}`}>
             <div class="card-body py-4 text-center">
-              <img src={oth} alt="icons" />
-              <h5 class={`card-title mt-3 ${style.cardh}`}>Supporting Local Authors</h5>
-              <p class="card-text">Explore our dedicated section for books written by authors from our community, and discover new voices that might become your new favorites.</p>
+              <img src={warranty} alt="icons" />
+              <h5 class={`card-title mt-3 ${style.cardh}`}>Warranty included</h5>
+              <p class="card-text">we offer comprehensive warranties on all our products to give you complete peace of mind. Our warranty covers manufacturing defects and ensures that you receive support in case of any issues. Whether it's a smartphone or an accessory, we've got you covered with hassle-free repairs or replacements. Your satisfaction and protection are our priority.</p>
             </div>
           </div>
         </div>

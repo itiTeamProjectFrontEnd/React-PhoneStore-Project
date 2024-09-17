@@ -1,15 +1,15 @@
 .link {
   text-decoration: none;
   list-style-type: none;
-  color: #222671;
+  color: #16023f;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 15px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .link:hover {
-  color: #d18ef4;
+  color: #64b1ff;
   transform: scale(1.1);
 }
 
@@ -57,8 +57,13 @@ li:hover {
 }
 
 nav{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Small shadow */
+  height: 100px;
+}
+.logonav{
+font-weight: bold;
+color: #16023f;
 }
 .notScrolled {
   transition: 0.3s;
@@ -90,4 +95,14 @@ nav{
   .roro{
     flex-direction: column !important; 
   }
+}
+.link1{
+  color:#f99746 ;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.link1:hover{
+  color: #ffbd87;
 }

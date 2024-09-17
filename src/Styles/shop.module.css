@@ -20,12 +20,12 @@ font-weight: bold;
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); 
 }
 .pbtn{
-  background-color:  #d18ef4;
+  background-color: #16023f;
 border-radius: 3px;
   border: 0;
 }
 .pbtn:hover{
-  background-color:#1f2478;;
+  background-color: #64b1ff;
   
   color: #ffffff;
 
