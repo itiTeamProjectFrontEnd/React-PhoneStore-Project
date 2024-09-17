@@ -1,7 +1,6 @@
 import React , {useState,useEffect, useContext}from "react";
 import { Link } from "react-router-dom";
 import style from "../../Styles/Navbar.module.css";
-import books from "../../Images/books.png";
 import logo from "../../Images/mobile-store-ecommerce-svgrepo-com.png";
 import ProductsContext from "../../ContextAPIs/ProductsContext";
 

@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-// import style from "../../Styles/Navbar.module.css";
 import  styles from "../../Styles/Footer.module.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import style from "../../Styles/shop.module.css";
 import ProductsContext from "../../ContextAPIs/ProductsContext";
@@ -79,7 +79,7 @@ export default function ProductCard({
           <button
             className={`btn btn-dark w-50 mx-auto ms-1 ${style.pbtn}`}
             onClick={() =>
-              addItemToCart(product.na, product.price, product.thumbnail)
+              addItemToCart(product.name, product.price, product.thumbnail)
             }
           >
             Add To Cart

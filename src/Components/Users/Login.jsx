@@ -18,7 +18,7 @@ const Login = ({ setIsLogin }) => {
   const proceedLogin = (e) => {
     e.preventDefault();
     if (validate()) {
-      fetch("http://localhost:5000/User/" + username)
+      fetch("http://localhost:3004/User/" + username)
       .then((res) => {
         return res.json();
       })

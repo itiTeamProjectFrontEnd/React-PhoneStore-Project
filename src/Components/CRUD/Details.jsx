@@ -29,7 +29,7 @@ function Details() {
   
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/products/${id}`)
+      .get(`http://localhost:3004/products/${id}`)
       .then((res) => setProduct(res.data))
       .catch((err) => console.log(err));
   }, [id]);
