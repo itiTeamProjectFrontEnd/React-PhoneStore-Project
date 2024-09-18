@@ -154,17 +154,6 @@
       "stock": 50,
       "category": "smartphone",
       "thumbnail": "https://www.wirelessplace.com/cdn/shop/files/157620-1200-auto_1024x1024.png?v=1715273356"
-    },
-    {
-      "id": "tych7pn",
-      "name": "samsung of ah",
-      "price": "200",
-      "discount": "10",
-      "description": "of ah yh bh",
-      "stock": "100",
-      "brand": "samsung ",
-      "thumbnail": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones-20230509/nova-series/nova12-i.png",
-      "category": "samsung"
     }
   ],
   "orderItem": [],

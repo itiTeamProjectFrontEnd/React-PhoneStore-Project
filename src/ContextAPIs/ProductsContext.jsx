@@ -28,11 +28,12 @@ export const ProductsContextProvider = (props) => {
   };
 
   const deleteProduct = (productId) => {
+    if(window.confirm('Are you sure you want to delete this product')){
     axios
       .delete(`http://localhost:3004/products/${productId}`)
       .then(() => getProducts())
       .catch((err) => console.log(err));
-  };
+  }};
 
   const addProduct = (product) => {
     axios.post(`http://localhost:3004/products`, product)
