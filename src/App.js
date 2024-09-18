@@ -41,7 +41,7 @@ function App() {
           <Route path="shop/:id" element={<Details />} />
           <Route path="edit/:id" element={<EditProduct />} />
           <Route path="addProduct" element={<AddProduct />} />
-          <Route path="Aboutus" element={<Aboutus />} />               ................
+          <Route path="Aboutus" element={<Aboutus />} />             
           <Route path="Contactus" element={<Contactus />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
