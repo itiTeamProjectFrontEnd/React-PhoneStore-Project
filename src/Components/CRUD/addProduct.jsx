@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { TableContainer } from '@mui/material';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../Styles/AddProduct.css";
 import "react-toastify/dist/ReactToastify.css";
 import ProductTable from "./ProductTable";
 
@@ -204,19 +203,18 @@ function AddProducts() {
                 </div>
                 <button
                   type="submit"
-                  className="btn w-100"
+                  className="btn w-100 btn-primary"
                   style={{
-                    backgroundColor: "#d18ef4",
                     color: "white",
                     transition:
                       "background-color 0.3s ease, transform 0.3s ease",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "#b06bd4";
+                    e.currentTarget.style.backgroundColor = "#347ce6";
                     e.currentTarget.style.transform = "scale(1.05)";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "#d18ef4";
+                    e.currentTarget.style.backgroundColor = "#0d6efd";
                     e.currentTarget.style.transform = "scale(1)";
                   }}
                 >

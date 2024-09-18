@@ -41,7 +41,7 @@ function ProductTable({Products,deleteProduct}) {
               <Button
                 onClick={() => deleteProduct(p.id)}
                 variant="contained"p
-                color="secondary"
+                color="warning"
                 style={{ marginLeft: '10px' }}
               >
                 Delete
