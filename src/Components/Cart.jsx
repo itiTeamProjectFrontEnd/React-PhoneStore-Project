@@ -145,7 +145,7 @@ const Profile = () => {
             <table className="table mt-4" style={{ margin: "15px" }}>
               <thead className="table-light">
                 <tr>
-                  <th className="text-center">Book</th>
+                  <th className="text-center">Phone</th>
                   <th className="text-center">Name</th>
                   <th className="text-center">Quantity</th>
                   <th className="text-center">Price</th>

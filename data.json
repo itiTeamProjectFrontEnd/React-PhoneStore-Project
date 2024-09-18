@@ -2,7 +2,7 @@
   "products": [
     {
       "id": "2",
-      "name": "Samsung Galaxy S23",
+      "name": "Samsung Galaxy s23",
       "brand": "Samsung",
       "price": 899.99,
       "discount": 15,
@@ -181,14 +181,15 @@
       "role": "admin"
     },
     {
-      "id": "salma",
-      "name": "SalmaAssem",
-      "password": "1233",
-      "email": "SalmaAssem@gmail.com",
+      "id": "mohamed",
+      "name": "mohamed",
+      "password": "123",
+      "email": "mohamed@gmail.com",
       "phone": "894745",
       "country": "india",
       "address": "hello",
-      "gender": "female"
+      "gender": "female",
+      "role": "admin"
     },
     {
       "id": "mohamed nasr",

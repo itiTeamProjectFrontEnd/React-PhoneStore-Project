@@ -201,9 +201,9 @@ function EditProducts() {
               </form>
             </div>
           </div>
-          <ProductTable Products={products} deleteProduct={deleteProduct} />
         </div>
       </div>
+          <ProductTable Products={products} deleteProduct={deleteProduct} />
     </section>
   );
 }

@@ -93,7 +93,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
             </li>
 
             {/* !!!!!!!very importaaaaaaaaaaty focus (admin access) */}
-            {localStorage.getItem("username") === "Abdelrahman" ? (
+            {localStorage.getItem("username") === "Abdelrahman"||"mohamed" ? (
               <li className="nav-item">
                 <Link
                   to="/addProduct"

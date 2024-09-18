@@ -1,8 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext} from "react";
 import { Link } from "react-router-dom";
 import style from "../Styles/home.module.css";
-import main from "../Styles/shop.module.css";
-import image2 from "../Images/mopp.svg";
 import quality from "../Images/quality.svg";
 import testimonial from "../Images/testimonial.svg";
 import customer from "../Images/customer.svg";
@@ -16,11 +14,6 @@ export default function Home() {
   const { products, getProducts, deleteProduct } = useContext(PostsContext);
 
   const topProducts = products?.slice(0, 3);
-
-  const headerStyle = {
-  };
-
-
   return (
     <>
       <div className={style.bkg} >
@@ -36,9 +29,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
-
         <div className={`container m-auto p-5 mb-5`}>
           <div >
             <h1 className={`text-center mb-5`}>Our Products</h1>
@@ -57,25 +47,6 @@ export default function Home() {
             <Link className={`${style.link3} mt-4`} to="/Shop">Explore More Products</Link>
           </div>
         </div>
-
-        {/* <div className={style.about}>
-        <img src={image2} alt="A decorative shelf with books" class='col-md-7' />
-        <div className={style.text} class='col-md-5 contianer'>
-          <h3 className={style.h3text}>
-           About US
-          </h3>
-          <p className={style.textp}>
-          At Tech Haven, we are committed to bringing you the latest smartphones, accessories,
-           and tech solutions all in one place. With a focus on quality, affordability, and customer satisfaction,
-            we strive to provide the best products and services tailored to your mobile needs.
-           Whether you're upgrading your device or looking for expert advice, we're here to help you stay connected.
-          </p>
-          <div className=" text-center">
-            <Link className={style.link3} to="/Shop">Shop Now</Link>
-          </div>
-        </div>
-      </div> */}
-
         <div className={`${style.whychooseus} py-5`}>
           <h1 className={`text-center mb-2`}>Why Choose Us?</h1>
           <div className={`card-deck container m-auto p-5 ${style.cardds}`}>

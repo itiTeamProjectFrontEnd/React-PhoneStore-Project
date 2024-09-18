@@ -28,7 +28,7 @@ function Footer  ({ isLogin, setIsLogin }) {
             </li>
             <li className="nav-item">
               <Link to="/shop">
-                Books
+                Phones
               </Link>
             </li>
             {localStorage.getItem("username") === "rewaa" ? (
@@ -36,7 +36,7 @@ function Footer  ({ isLogin, setIsLogin }) {
                 <Link
                   to="/addProduct"
                 >
-                  Add Book
+                  Add Phone
                 </Link>
               </li>
             ) : (

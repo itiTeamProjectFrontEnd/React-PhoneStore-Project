@@ -1,5 +1,4 @@
 import React from 'react';
-import style from "../Styles/Contact.module.css"
 const NotFound = () => {
     return (
         <div className='w-100 d-flex justify-content-center align-items-center'>
