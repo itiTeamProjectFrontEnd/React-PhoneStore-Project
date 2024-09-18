@@ -2,19 +2,24 @@ import axios from "axios";
 import React, { useId, useState, useRef, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-
+import ProductTable from "./ProductTable";
+import { useContext } from "react";
+import ProductsContext from "../../ContextAPIs/ProductsContext";
 
 function EditProducts() {
+  let {deleteProduct,products,getProducts } = useContext(ProductsContext);
+
   const inputRef = useRef(null);
   const [prdct, setPrdct] = useState({
     id: useId(),
-    title: "",
+    name: "",
     price: 0,
-    discountPercentage: 0,
+    discount: 0,
     description: "",
+    brand: "",
     stock: 0,
     thumbnail:
-      "https://www.energyfit.com.mk/wp-content/plugins/ap_background/images/default/default_large.png",
+      "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones-20230509/nova-series/nova12-i.png",
     category: "",
   });
   const navigator = useNavigate();
@@ -51,8 +56,9 @@ function EditProducts() {
         autoClose: 3000,
       });
       setTimeout(() => {
-        navigator("/shop");
+        navigator("/addProduct");
       }, 2000);
+      getProducts();
     } catch (err) {
       console.log(err);
     }
@@ -68,16 +74,16 @@ function EditProducts() {
             <h1 className="text-center">Edit Product</h1>
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
-                <label htmlFor="title" className="form-label">
+                <label htmlFor="name" className="form-label">
                   Name
                 </label>
                 <input
                   required
                   type="text"
                   className="form-control"
-                  id="title"
-                  name="title"
-                  value={prdct.title}
+                  id="name"
+                  name="name"
+                  value={prdct.name}
                   onChange={handleChange}
                   ref={inputRef}
                   placeholder="Enter name"
@@ -99,16 +105,16 @@ function EditProducts() {
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="discountPercentage" className="form-label">
+                <label htmlFor="discount" className="form-label">
                   Discount Percentage
                 </label>
                 <input
                   required
                   type="number"
                   className="form-control"
-                  id="discountPercentage"
-                  name="discountPercentage"
-                  value={prdct.discountPercentage}
+                  id="discount"
+                  name="discount"
+                  value={prdct.discount}
                   onChange={handleChange}
                   placeholder="Enter discount percentage"
                 />
@@ -196,7 +202,10 @@ function EditProducts() {
 
           </div>
         </div>
-      </div>
+        <ProductTable 
+        Products={products}
+        deleteProduct={deleteProduct}/>      
+        </div>
     </div>
     </section>
   );

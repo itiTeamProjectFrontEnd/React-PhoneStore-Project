@@ -19,6 +19,7 @@ import AddProduct from "./Components/CRUD/addProduct";
 import Contactus from "./Components/Contactus.jsx";
 import Notfound from "./Components/NotFound";
 import ScrollToTop from './Components/ScrollToTop.jsx';
+import EditProducts from "./Components/CRUD/EditProduct";
 
 function App () {
   const [isLogin, setIsLogin] = useState(localStorage.getItem("username"));

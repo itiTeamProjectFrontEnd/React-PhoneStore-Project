@@ -1,26 +1,16 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "iPhone 14 Pro",
-      "brand": "Apple",
-      "price": 999.99,
-      "discount": 10,
-      "stock": 50,
-      "category": "smartphone",
-      "rating": 4.8,
-      "thumbnail": "https://www.imagineonline.store/cdn/shop/files/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1b__WWEN.jpg?v=1692348974&width=823"
-    },
-    {
       "id": "2",
-      "name": "Samsung Galaxy S23",
+      "name": "Samsung Galaxy S30",
       "brand": "Samsung",
       "price": 899.99,
       "discount": 15,
       "stock": 40,
       "category": "smartphone",
       "rating": 4.7,
-      "thumbnail": "https://ennap.com/cdn/shop/files/sa-galaxy-s23-fe-s711-sm-s711blgbmea-538530385.png?v=1703527799"
+      "thumbnail": "https://ennap.com/cdn/shop/files/sa-galaxy-s23-fe-s711-sm-s711blgbmea-538530385.png?v=1703527799",
+      "description": "jhfkjgkj"
     },
     {
       "id": "3",
@@ -164,26 +154,6 @@
       "stock": 50,
       "category": "smartphone",
       "thumbnail": "https://www.wirelessplace.com/cdn/shop/files/157620-1200-auto_1024x1024.png?v=1715273356"
-    },
-    {
-      "id": "sh33arj",
-      "title": "xiaoma",
-      "price": "1000",
-      "discountPercentage": "20",
-      "description": "dsfmav",
-      "stock": "2",
-      "thumbnail": "https://bookworlduae.com/cdn/shop/files/image_150a4245-3d0a-4d54-82e4-42be85df7332.jpg?v=1687797780&width=713",
-      "category": "xiaomi"
-    },
-    {
-      "id": "nvt0bic",
-      "title": "mohsen",
-      "price": "10",
-      "discountPercentage": "1",
-      "description": "haga ful el ful",
-      "stock": "8",
-      "thumbnail": "https://5.imimg.com/data5/SELLER/Default/2023/3/296178265/EX/FQ/OZ/186724856/vivo-mobile-phone.jpg",
-      "category": "samsung"
     }
   ],
   "orderItem": [],
@@ -214,6 +184,20 @@
       "password": "123456789aA@",
       "email": "hoho@hehe.com",
       "phone": "01228162851",
+      "address": ""
+    },
+    {
+      "id": "mohamed",
+      "password": "123456789aA@",
+      "email": "hoho@hoho.com",
+      "phone": "01019267521",
+      "address": ""
+    },
+    {
+      "id": "محمد نصر منصور الخريبي",
+      "password": "123456aA@",
+      "email": "mohammedelkhoreby@std.mans.edu.eg",
+      "phone": "01019267521",
       "address": ""
     }
   ]

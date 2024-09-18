@@ -97,7 +97,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
                   to="/addProduct"
                   className={`${style.link} text-decoration-none`}
                 >
-                  Add Book
+                  Add Phone
                 </Link>
               </li>
             ) : (
