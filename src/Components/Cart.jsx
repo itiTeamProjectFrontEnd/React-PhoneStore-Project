@@ -146,7 +146,7 @@ const Profile = () => {
               <thead className="table-light">
                 <tr>
                   <th className="text-center">Book</th>
-                  <th className="text-center">Title</th>
+                  <th className="text-center">Name</th>
                   <th className="text-center">Quantity</th>
                   <th className="text-center">Price</th>
                   <th></th>

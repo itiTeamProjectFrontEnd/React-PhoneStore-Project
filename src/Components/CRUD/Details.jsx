@@ -12,12 +12,12 @@ function Details() {
 
   let navigator = useNavigate()
 
-  const addItemm = async (title, price, image) => {
+  const addItemm = async (name, price, image) => {
     if(!localStorage.getItem("username")){
       navigator('/login')
       return
     }
-    await addItem(title,price,image)
+    await addItem(name,price,image)
     toast.success("Product Added Successfully To Your Cart", {
       position: "bottom-right",
       theme: "light",
@@ -46,9 +46,9 @@ function Details() {
       </div>
       <div className={style.details}>
         <h2 className={style.productTitle}>{product.title}</h2>
-        {product.discountPercentage > 0 && (
+        {product.discount > 0 && (
           <span className={style.discountBadge}>
-            {product.discountPercentage}% Off
+            {product.discount}% Off
           </span>
         )}
         <div className={style.priceSection}>
@@ -56,7 +56,7 @@ function Details() {
             $
             {(
               product.price -
-              (product.price * product.discountPercentage) / 100
+              (product.price * product.discount) / 100
             ).toFixed(2)}
           </p>
           {product.discountPercentage > 0 && (
@@ -76,7 +76,7 @@ function Details() {
         <button
           className={`${style.button}`}
           onClick={() =>
-            addItemm(product.title, product.price, product.thumbnail)
+            addItemm(product.name, product.price, product.thumbnail)
           }
         >
           Add To Cart

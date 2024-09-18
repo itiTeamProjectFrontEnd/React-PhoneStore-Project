@@ -60,7 +60,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
         <Link className="navbar-brand" to="/Home"
           aria-current="page"
         >
-          <h3 className={style.logonav}>Tech Haven</h3>
+          <h3 className={style.logonav}>Tech Heaven</h3>
         </Link>
         <span className="text-light">
         </span>

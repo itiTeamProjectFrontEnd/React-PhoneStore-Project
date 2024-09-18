@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState, useContext } from "react";
 import ProductsContext from "../../ContextAPIs/ProductsContext";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-
+import { TableContainer } from '@mui/material';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../Styles/AddProduct.css";
 import "react-toastify/dist/ReactToastify.css";
+import ProductTable from "./ProductTable";
 
 function AddProducts() {
   const inputRef = useRef(null);
@@ -13,23 +13,27 @@ function AddProducts() {
 
   const [product, setProduct] = useState({
     id: Math.random().toString(36).substring(2, 9),
-    title: "",
+    name: "",
     price: "",
-    discountPercentage: "",
+    discount: "",
     description: "",
     stock: "",
+    brand:"",
     thumbnail:
-      "https://bookworlduae.com/cdn/shop/files/image_150a4245-3d0a-4d54-82e4-42be85df7332.jpg?v=1687797780&width=713",
+      "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones-20230509/nova-series/nova12-i.png",
     category: "",
   });
 
-  const { addProduct } = useContext(ProductsContext);
+  const { addProduct,deleteProduct,products } = useContext(ProductsContext);
 
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
   const handleChange = (e) => {
+    if(e.target.name=="price"||e.target.name=="discount"||e.target.name=="stock"){
+      e.target.value = parseInt(e.target.value)
+    }
     setProduct({
       ...product,
       [e.target.name]: e.target.value,
@@ -51,13 +55,14 @@ function AddProducts() {
 
     setProduct({
       id: Math.random().toString(36).substring(2, 9),
-      title: "",
+      name: "",
       price: "",
-      discountPercentage: "",
+      discount: "",
       description: "",
       stock: "",
+      brand:"",
       thumbnail:
-        "https://bookworlduae.com/cdn/shop/files/IMG-0742.jpg?v=1723547578&width=713",
+        "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones-20230509/nova-series/nova12-i.png",
       category: "",
     });
   };
@@ -75,7 +80,7 @@ function AddProducts() {
 
               <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                  <label htmlFor="title" className="form-label">
+                  <label htmlFor="name" className="form-label">
                     Name
                   </label>
                   <input
@@ -83,8 +88,24 @@ function AddProducts() {
                     type="text"
                     className="form-control"
                     id="title"
-                    name="title"
-                    value={product.title}
+                    name="name"
+                    value={product.name}
+                    onChange={handleChange}
+                    ref={inputRef}
+                    placeholder="Enter name"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="brand" className="form-label">
+                    Brand
+                  </label>
+                  <input
+                    required
+                    type="text"
+                    className="form-control"
+                    id="brand"
+                    name="brand"
+                    value={product.brand}
                     onChange={handleChange}
                     ref={inputRef}
                     placeholder="Enter name"
@@ -106,7 +127,7 @@ function AddProducts() {
                   />
                 </div>
                 <div className="mb-3">
-                  <label htmlFor="discountPercentage" className="form-label">
+                  <label htmlFor="discount" className="form-label">
                     Discount Percentage
                   </label>
                   <input
@@ -114,8 +135,8 @@ function AddProducts() {
                     type="number"
                     className="form-control"
                     id="discountPercentage"
-                    name="discountPercentage"
-                    value={product.discountPercentage}
+                    name="discount"
+                    value={product.discount}
                     onChange={handleChange}
                     placeholder="Enter discount percentage"
                   />
@@ -182,19 +203,18 @@ function AddProducts() {
                 </div>
                 <button
                   type="submit"
-                  className="btn w-100"
+                  className="btn w-100 btn-primary"
                   style={{
-                    backgroundColor: "#d18ef4",
                     color: "white",
                     transition:
                       "background-color 0.3s ease, transform 0.3s ease",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = "#b06bd4";
+                    e.currentTarget.style.backgroundColor = "#347ce6";
                     e.currentTarget.style.transform = "scale(1.05)";
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = "#d18ef4";
+                    e.currentTarget.style.backgroundColor = "#0d6efd";
                     e.currentTarget.style.transform = "scale(1)";
                   }}
                 >
@@ -206,8 +226,12 @@ function AddProducts() {
           </div>
         </div>
       </div>
+        <ProductTable 
+        Products={products}
+        deleteProduct={deleteProduct}/>
     </section>
   );
 }
 
 export default AddProducts;
+export {TableContainer};
