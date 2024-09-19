@@ -154,6 +154,17 @@
       "stock": 50,
       "category": "smartphone",
       "thumbnail": "https://www.wirelessplace.com/cdn/shop/files/157620-1200-auto_1024x1024.png?v=1715273356"
+    },
+    {
+      "id": "fh33qtf",
+      "name": "infinix hot 10 s",
+      "price": "3700",
+      "discount": "5",
+      "description": "nice phone",
+      "stock": "0",
+      "brand": "Infinix",
+      "thumbnail": "https://i.gadgets360cdn.com/products/large/infinix-hot-10-s-db-600x800-1619068983.jpg",
+      "category": "infinix"
     }
   ],
   "orderItem": [],
