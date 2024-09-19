@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../Styles/loginPage.css";
 
-const Signin = () => {
+const Register = () => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -174,4 +174,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Register;

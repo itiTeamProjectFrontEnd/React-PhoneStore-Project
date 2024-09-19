@@ -142,7 +142,7 @@ body {
   height: 50px;
   font-size: 15px;
   margin-top: 20px;
-  background-color: #d18ef4;
+  background-color: #0D3B66;
   color: azure;
   cursor: pointer;
   border: 0;
@@ -152,5 +152,5 @@ body {
 }
 
 .checkout:hover {
-  background-color: #ca6ffb;
+  background-color: #1E90FF;
 }

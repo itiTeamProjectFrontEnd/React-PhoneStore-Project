@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import style from "../../Styles/Navbar.module.css";
 import logo from "../../Images/mobile-store-ecommerce-svgrepo-com.png";
 import ProductsContext from "../../ContextAPIs/ProductsContext";
@@ -9,7 +10,17 @@ export default function Navbar({ isLogin, setIsLogin }) {
 
 
 
-  const handleSignOut = () => {
+  const handleSignOut = async () => {
+    
+    const cartItems = await fetchCartItems();
+      
+    
+    for (let item of cartItems) {
+      await axios.delete(`http://localhost:3004/orderItem/${item.id}`);
+    }
+
+    setNumOfitems(0);
+    
     localStorage.removeItem("username");
     setIsLogin(false);
   };
@@ -75,7 +86,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
         >
           <span className="navbar-toggler-icon "></span>
         </button>
-        <div className="collapse navbar-collapse  " id="navbarSupportedContent">
+        <div className="collapse navbar-collapse bg-white rounded " id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto gap-4 gap-lg-5 me-6 text-center  ">
             <li className="nav-item">
               <Link
@@ -93,7 +104,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
             </li>
 
             {/* !!!!!!!very importaaaaaaaaaaty focus (admin access) */}
-            {localStorage.getItem("username") === "Abdelrahman"||"mohamed" ? (
+            {localStorage.getItem("username") === "admin" ? (
               <li className="nav-item">
                 <Link
                   to="/addProduct"
@@ -127,7 +138,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
           {localStorage.getItem("username") ? (
             <>
               <div className={`${style.roro}  d-flex  align-items-center`}>
-                <li className="nav-item me-lg-3 ms-lg-5 mt-2 mt-lg-0  text-center" style={{ position: 'relative' }}>
+                <li className="nav-item me-lg-3 ms-lg-5 mt-2 mt-lg-0 mb-md-2 mb-sm-2 mb-2 text-center" style={{ position: 'relative' }}>
                   <Link to="/cart" className={`${style.link} text-decoration-none`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +155,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
                     )}
                   </Link>
                 </li>
-                <div className={`d-flex mt-2 mt-lg-0 mb-2 mb-lg-0 position-relative align-items-center ${style.toggleExpand}`} onClick={() => setIsToggle(!isToggle)}>
+                <div className={`d-flex mt-2 mt-lg-0 mb-2 mb-lg-0 mb-md-2 mb-sm-2 mb-2 position-relative align-items-center ${style.toggleExpand}`} onClick={() => setIsToggle(!isToggle)}>
                   <div className="icon rounded-pill bg-main d-flex justify-content-center me-2 align-items-center"
                     style={{ width: "28px", height: "28px" }}
                   >
@@ -181,7 +192,7 @@ export default function Navbar({ isLogin, setIsLogin }) {
                 </li>
                 <li className="nav-item mb-lg-0 mb-2">
                   <Link
-                    to="/Signin"
+                    to="/Register"
                     className={`${style.link} text-decoration-none`}
                   >
                     Register
