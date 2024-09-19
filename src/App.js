@@ -9,7 +9,7 @@ import { ProductsContextProvider } from "./ContextAPIs/ProductsContext.jsx";
 import Home from "./Components/Home";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
-import Signin from "./Components/Users/Signin.jsx";
+import Register from "./Components/Users/Register.jsx";
 import Login from "./Components/Users/Login";
 import Profile from "./Components/Cart";
 import Shop from "./Components/CRUD/Shop";
@@ -34,7 +34,7 @@ function App() {
             <Route path={path} element={<Home />} key={index} />
           ))}
           <Route path="/Login" element={<Login setIsLogin={setIsLogin} />} />
-          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Register" element={<Register />} />
           <Route path="/cart" element={<Profile />} />
           <Route path="shop" element={<Shop />} />
           <Route path="shop/:id" element={<Details />} />

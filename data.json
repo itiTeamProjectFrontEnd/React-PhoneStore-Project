@@ -159,10 +159,10 @@
   "orderItem": [],
   "User": [
     {
-      "id": "Abdelrahman",
-      "name": "Abdelrahman",
-      "password": "123",
-      "email": "Abdelrahman@gmail.com",
+      "id": "admin",
+      "name": "admin",
+      "password": "admin",
+      "email": "Admin@admin.com",
       "phone": "894745",
       "country": "Egypt",
       "address": "hello",
@@ -192,6 +192,20 @@
       "password": "123456789aA@",
       "email": "ayman@ayman.ayman",
       "phone": "01019267521",
+      "address": ""
+    },
+    {
+      "id": "joe",
+      "password": "N@gg@r1111",
+      "email": "joe@gmail.com",
+      "phone": "01023310659",
+      "address": ""
+    },
+    {
+      "id": "ali",
+      "password": "N@gg@r1111",
+      "email": "ali@gmail.com",
+      "phone": "01023310655",
       "address": ""
     }
   ]
