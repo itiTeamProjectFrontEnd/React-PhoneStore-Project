@@ -99,20 +99,30 @@ export default function Navbar({ isLogin, setIsLogin }) {
             </li>
             <li className="nav-item">
               <Link className={`${style.link} text-decoration-none`} to="/shop">
-                Phones
+                Shop
               </Link>
             </li>
 
-            {/* !!!!!!!very importaaaaaaaaaaty focus (admin access) */}
+            {/* (admin access only) */}
             {localStorage.getItem("username") === "admin" ? (
+              <>
               <li className="nav-item">
                 <Link
                   to="/addProduct"
                   className={`${style.link} text-decoration-none`}
                 >
-                  Add Phone
+                  Products
                 </Link>
               </li>
+              <li className="nav-item">
+                  <Link
+                    to="/User Management"
+                    className={`${style.link} text-decoration-none ms-3`}
+                  >
+                    Users
+                  </Link>
+              </li>
+              </>
             ) : (
               ""
             )}

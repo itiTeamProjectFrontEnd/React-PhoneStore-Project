@@ -39,7 +39,7 @@ const Profile = () => {
     }
   };
 
-  let{ fetchCartItems } = useContext(ProductsContext)
+  let{ fetchCartItems , setNumOfitems } = useContext(ProductsContext)
 
   const deleteOrder = async (id) => {
     let isDelete = window.confirm(
@@ -78,6 +78,7 @@ const Profile = () => {
         for (let item of items) {
           await axios.delete(`http://localhost:3004/orderItem/${item.id}`);
         }
+        setNumOfitems(0);
         setItems([]);
         setTotal(0);
 
@@ -94,7 +95,6 @@ const Profile = () => {
           theme: "light",
           autoClose: 3000,
         });
-        // alert("Your order has been processed successfully! It will be for you in a week!");
       } catch (error) {
         console.error("Error during checkout:", error);
       }
