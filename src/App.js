@@ -9,7 +9,7 @@ import { ProductsContextProvider } from "./ContextAPIs/ProductsContext.jsx";
 import Home from "./Components/Home";
 import Footer from "./Components/Shared/Footer";
 import Navbar from "./Components/Shared/Navbar";
-import Signin from "./Components/Users/Signin.jsx";
+import Register from "./Components/Users/Register.jsx";
 import Login from "./Components/Users/Login";
 import Profile from "./Components/Cart";
 import Shop from "./Components/CRUD/Shop";
@@ -20,6 +20,7 @@ import Aboutus from "./Components/Aboutus.jsx";
 import Contactus from "./Components/Contactus.jsx";
 import Notfound from "./Components/NotFound";
 import ScrollToTop from './Components/ScrollToTop.jsx';
+import UserManagement from "./Components/CRUD/UserManagement.jsx";
 
 function App() {
   const [isLogin, setIsLogin] = useState(localStorage.getItem("username"));
@@ -34,7 +35,7 @@ function App() {
             <Route path={path} element={<Home />} key={index} />
           ))}
           <Route path="/Login" element={<Login setIsLogin={setIsLogin} />} />
-          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Register" element={<Register />} />
           <Route path="/cart" element={<Profile />} />
           <Route path="shop" element={<Shop />} />
           <Route path="shop/:id" element={<Details />} />
@@ -42,6 +43,7 @@ function App() {
           <Route path="addProduct" element={<AddProduct />} />
           <Route path="Aboutus" element={<Aboutus />} />             
           <Route path="Contactus" element={<Contactus />} />
+          <Route path="/User Management" element={<UserManagement />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
         {<Footer />}

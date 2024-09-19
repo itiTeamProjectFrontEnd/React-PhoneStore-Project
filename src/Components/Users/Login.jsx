@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import { GoogleLogin } from "@react-oauth/google";
 import "react-toastify/dist/ReactToastify.css";
 import "../../Styles/loginPage.css";
+import ProductsContext from "../../ContextAPIs/ProductsContext";
+import { useContext } from "react";
 
 const Login = ({ setIsLogin }) => {
+  const {getUsers}=useContext(ProductsContext);
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -30,6 +33,7 @@ const Login = ({ setIsLogin }) => {
               toast.success("Success");
               localStorage.setItem("username", username);
               setIsLogin(true);
+              getUsers();
               navigate("/Home");
             } else {
               toast.error("Please Enter valid credentials");
@@ -53,16 +57,6 @@ const Login = ({ setIsLogin }) => {
       toast.warning("Please Enter Password");
     }
     return result;
-  };
-
-  const handleGoogleSuccess = (response) => {
-    console.log("Google response", response);
-    // Implement the logic to handle Google login
-  };
-
-  const handleFacebookSuccess = (response) => {
-    console.log("Facebook response", response);
-    // Implement the logic to handle Facebook login
   };
 
   return (
@@ -91,17 +85,9 @@ const Login = ({ setIsLogin }) => {
           <button type="submit" className="submit-button">
             Login
           </button>
-          <p>or</p>
-          <div className="social-login-buttons">
-            <GoogleLogin
-              onSuccess={handleGoogleSuccess}
-              onFailure={(error) => toast.error("Google login failed: " + error.message)}
-              buttonText="Login with Google"
-            />
-            {/* Add Facebook login button if you have it */}
-          </div>
+
           <p>
-            New user? <Link to="/Signin" className="link">Sign Up</Link>
+            New user? <Link to="/Register" className="link">Sign Up</Link>
           </p>
         </form>
         <ToastContainer />

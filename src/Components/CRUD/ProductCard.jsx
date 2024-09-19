@@ -42,7 +42,7 @@ export default function ProductCard({
       <ToastContainer/>
       <div className={`card py-3 rounded-3 ${style.ay}`} key={product.id}>
         <div className="position-relative">
-          {localStorage.getItem('username') === 'rewaa' && (
+          {localStorage.getItem('username') === 'admin' && (
             <button
               className={`p-2 btn-close ${style.closeButton} position-absolute`}
               onClick={handleDelete}
@@ -71,7 +71,7 @@ export default function ProductCard({
           <p className={`card-text text-dark fw-bold`}>
             {product.brand}
           </p>
-          {localStorage.getItem('username') === 'rewaa' && (
+          {localStorage.getItem('username') === 'admin' && (
             <Link to={`/edit/${product.id}`} className={`btn btn-dark px-5 ${style.pbtn}`}>
               Edit
             </Link>

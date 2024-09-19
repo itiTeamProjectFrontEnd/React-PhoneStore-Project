@@ -8,6 +8,7 @@ const ProductsContext = createContext();
 export const ProductsContextProvider = (props) => {
   const [products, setProducts] = useState([]);
   const [numOfitems, setNumOfitems] = useState(0);
+  const [users, setUsers] = useState([]);  // Users state
   const { children } = props;
   const navigate = useNavigate();
   
@@ -88,11 +89,37 @@ export const ProductsContextProvider = (props) => {
     await fetchCartItems()
 }
 
+const getUsers = () => {
+  axios
+    .get("http://localhost:3004/User") // Fetching the users from the "User" array
+    .then((res) => setUsers(res.data))
+    .catch((err) => console.log(err));
+};
+
+// **Delete a user by ID**
+const deleteUser = (userId) => {
+  axios
+    .delete(`http://localhost:3004/User/${userId}`)
+    .then(() => getUsers())  // Refresh user list after deletion
+    .catch((err) => console.log(err));
+};
+
+// **Edit user data by ID**
+const editUser = (userId, updatedUserData) => {
+  axios
+    .patch(`http://localhost:3004/User/${userId}`, updatedUserData)
+    .then(() => {
+      getUsers(); // Refresh users after editing
+    })
+    .catch((err) => console.log(err));
+};
 
   useEffect(() => {
     getProducts();
+    getUsers();  // Fetch users when the component is mounted
   }, []);
-
+ 
+  
   return (
     <ProductsContext.Provider
       value={{
@@ -104,7 +131,11 @@ export const ProductsContextProvider = (props) => {
         addProduct,
         getUserSpecificOrders, // Provide this function to other components
         editProduct,
-        addItem,numOfitems,setNumOfitems,fetchCartItems
+        addItem,numOfitems,setNumOfitems,fetchCartItems,
+        users,
+        getUsers,
+        deleteUser, // Expose deleteUser to other components
+        editUser // Expose editUser to other components
       }}
     >
       {children}
