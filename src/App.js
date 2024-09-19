@@ -20,6 +20,7 @@ import Aboutus from "./Components/Aboutus.jsx";
 import Contactus from "./Components/Contactus.jsx";
 import Notfound from "./Components/NotFound";
 import ScrollToTop from './Components/ScrollToTop.jsx';
+import UserManagement from "./Components/CRUD/UserManagement.jsx";
 
 function App() {
   const [isLogin, setIsLogin] = useState(localStorage.getItem("username"));
@@ -42,6 +43,7 @@ function App() {
           <Route path="addProduct" element={<AddProduct />} />
           <Route path="Aboutus" element={<Aboutus />} />             
           <Route path="Contactus" element={<Contactus />} />
+          <Route path="/User Management" element={<UserManagement />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
         {<Footer />}

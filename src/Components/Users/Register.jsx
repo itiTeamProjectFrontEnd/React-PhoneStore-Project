@@ -6,16 +6,20 @@ import "../../Styles/loginPage.css";
 
 const Register = () => {
   const [id, setId] = useState("");
+  const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [role, setRole] = useState("");
   const [address, setAddress] = useState("");
   const [errors, setErrors] = useState({
-    id: "",
+   
+    id,name: "",
     password: "",
     confirmPassword: "",
     email: "",
+    role:""
   });
 
   const navigate = useNavigate();
@@ -87,10 +91,11 @@ const Register = () => {
     e.preventDefault();
     if (isValidate()) {
       const regObj = {
-        id,
+        id,name,
         password,
         email,
         phone,
+        role,
         address,
       };
 
@@ -119,7 +124,7 @@ const Register = () => {
               type="text"
               placeholder="Name"
               value={id}
-              onChange={(e) => setId(e.target.value)}
+              onChange={(e) => {setId(e.target.value);setName(e.target.value);}}
               required
             />
             {errors.id && <span className="error-message">{errors.id}</span>}
@@ -129,7 +134,7 @@ const Register = () => {
               type="email"
               placeholder="Email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {setEmail(e.target.value);setRole("User")}}
               required
             />
             {errors.email && <span className="error-message">{errors.email}</span>}

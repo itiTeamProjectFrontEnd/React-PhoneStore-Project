@@ -3,8 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../../Styles/loginPage.css";
+import ProductsContext from "../../ContextAPIs/ProductsContext";
+import { useContext } from "react";
 
 const Login = ({ setIsLogin }) => {
+  const {getUsers}=useContext(ProductsContext);
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -29,6 +33,7 @@ const Login = ({ setIsLogin }) => {
               toast.success("Success");
               localStorage.setItem("username", username);
               setIsLogin(true);
+              getUsers();
               navigate("/Home");
             } else {
               toast.error("Please Enter valid credentials");
