@@ -74,6 +74,7 @@ function Details() {
         </p>
         <p className={style.category}>Category: {product.category}</p>
         <button
+          style={{ backgroundColor:"#0D3B66" }}
           className={`${style.button}`}
           onClick={() =>
             addItemm(product.name, product.price, product.thumbnail)

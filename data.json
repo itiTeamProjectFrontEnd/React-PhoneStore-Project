@@ -165,23 +165,18 @@
       "rating": 4.5,
       "stock": 50,
       "category": "smartphone",
-<<<<<<< HEAD
       "thumbnail": "https://www.wirelessplace.com/cdn/shop/files/157620-1200-auto_1024x1024.png?v=1715273356"
     },
     {
-      "id": "fh33qtf",
+      "id": "1xcqqsp",
       "name": "infinix hot 10 s",
       "price": "3700",
       "discount": "5",
       "description": "nice phone",
       "stock": "0",
       "brand": "Infinix",
-      "thumbnail": "https://i.gadgets360cdn.com/products/large/infinix-hot-10-s-db-600x800-1619068983.jpg",
+      "thumbnail": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones-20230509/nova-series/nova12-i.png",
       "category": "infinix"
-=======
-      "thumbnail": "https://www.wirelessplace.com/cdn/shop/files/157620-1200-auto_1024x1024.png?v=1715273356",
-      "description": "Motorola Edge 20"
->>>>>>> aa1cd17744058cc6bf1e0df4a649a24d6ed9dc8e
     }
   ],
   "orderItem": [],
@@ -209,24 +204,31 @@
       "role": "user"
     },
     {
-      "id": "mohamed nasr",
-      "password": "123456789aA@",
-      "email": "hoho@hehe.com",
-      "phone": "01228162851",
-      "address": ""
-    },
-    {
       "id": "ayman",
+      "name": "ayman",
       "password": "123456789aA@",
       "email": "ayman@ayman.ayman",
       "phone": "01019267521",
+      "role": "user",
+      "address": "المنزلة- دقهلية",
+      "country": "Egypt"
+    },
+    {
+      "id": "mohamed",
+      "name": "mohamed",
+      "password": "123456789aA@",
+      "email": "mohamednasr@example.com",
+      "phone": "123123123",
+      "role": "user",
       "address": ""
     },
     {
-      "id": "joe",
-      "password": "N@gg@r1111",
-      "email": "joe@gmail.com",
-      "phone": "01023310659",
+      "id": "test",
+      "name": "test",
+      "password": "123456aA@",
+      "email": "test@test.com",
+      "phone": "123123",
+      "role": "user",
       "address": ""
     }
   ]

@@ -1,7 +1,7 @@
 
 .mainImg {
   width: 350px;
-  height: 350px;
+  max-height: 75%;
   margin-left: 80px;
   position: relative;
   animation: up-and-down 3s linear infinite;
@@ -32,6 +32,8 @@
 
 .teamImg {
   transition: 0.3s;
+  width: 170px;
+  height: 220px;
   cursor: pointer;
 }
 

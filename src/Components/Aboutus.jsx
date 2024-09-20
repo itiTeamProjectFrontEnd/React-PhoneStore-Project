@@ -4,11 +4,11 @@ import BrandSwiper from './BrandSwiper'
 
 import aboutImage from '../Images/main-removebg-preview.png'
 
-import Ahmed from '../Images/youssef.jpg'
+import Ahmed from '../Images/ahmed.jpg'
 import Nasr from '../Images/nasr.jpg'
 import Youssef from '../Images/youssef.jpg'
-import Ayman from '../Images/nasr.jpg'
-import Abdelrahman from '../Images/youssef.jpg'
+import Ayman from '../Images/ayman.jpg'
+import Abdelrahman from '../Images/abdo.jpg'
 
 
 const AboutUs = () => {
@@ -24,7 +24,7 @@ const AboutUs = () => {
       image: Nasr
     },
     {
-      name: "Youssef Elnaggar",
+      name: "Yousef Elnagar",
       role: "Front-End",
       image: Youssef
     },
@@ -51,7 +51,7 @@ const AboutUs = () => {
             <p className={`${styles.disc}`}>we pride ourselves on offering a wide selection of the latest smartphones to meet all your needs. Whether you're looking for the newest models or the best deals, we have something for everyone. Our mission is to provide top-quality products and exceptional customer service. We strive to ensure you find the perfect device with ease and confidence.</p>
           </div>
           <div className="col-md-6">
-            <img src={aboutImage} className={`img-fluid ${styles.mainImg}`} alt="" />
+            <img src={aboutImage} className={`img-fluid ${styles.mainImg}`} alt=""/>
           </div>
         </div>
         <BrandSwiper />

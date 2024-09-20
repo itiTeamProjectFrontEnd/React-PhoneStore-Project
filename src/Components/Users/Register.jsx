@@ -14,12 +14,12 @@ const Register = () => {
   const [role, setRole] = useState("");
   const [address, setAddress] = useState("");
   const [errors, setErrors] = useState({
-   
-    id,name: "",
+    id,
+    name: "",
     password: "",
     confirmPassword: "",
     email: "",
-    role:""
+    role: "",
   });
 
   const navigate = useNavigate();
@@ -48,35 +48,38 @@ const Register = () => {
       newErrors.email = "Email must be a valid email address";
     }
 
-   // Validate Password
-  if (!password) {
-    isProceed = false;
-    newErrors.password = "Password is required";
-  } else if (password.length < 8) {
-    isProceed = false;
-    newErrors.password = "Password must be at least 8 characters";
-  } else if (!/[A-Z]/.test(password)) {
-    isProceed = false;
-    newErrors.password = "Password must contain at least one uppercase letter";
-  } else if (!/[a-z]/.test(password)) {
-    isProceed = false;
-    newErrors.password = "Password must contain at least one lowercase letter";
-  } else if (!/[0-9]/.test(password)) {
-    isProceed = false;
-    newErrors.password = "Password must contain at least one number";
-  } else if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-    isProceed = false;
-    newErrors.password = "Password must contain at least one special character";
-  }
+    // Validate Password
+    if (!password) {
+      isProceed = false;
+      newErrors.password = "Password is required";
+    } else if (password.length < 8) {
+      isProceed = false;
+      newErrors.password = "Password must be at least 8 characters";
+    } else if (!/[A-Z]/.test(password)) {
+      isProceed = false;
+      newErrors.password =
+        "Password must contain at least one uppercase letter";
+    } else if (!/[a-z]/.test(password)) {
+      isProceed = false;
+      newErrors.password =
+        "Password must contain at least one lowercase letter";
+    } else if (!/[0-9]/.test(password)) {
+      isProceed = false;
+      newErrors.password = "Password must contain at least one number";
+    } else if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      isProceed = false;
+      newErrors.password =
+        "Password must contain at least one special character";
+    }
 
-  // Validate Confirm Password
-  if (!confirmPassword) {
-    isProceed = false;
-    newErrors.confirmPassword = "Confirm Password is required";
-  } else if (confirmPassword !== password) {
-    isProceed = false;
-    newErrors.confirmPassword = "Passwords do not match";
-  }
+    // Validate Confirm Password
+    if (!confirmPassword) {
+      isProceed = false;
+      newErrors.confirmPassword = "Confirm Password is required";
+    } else if (confirmPassword !== password) {
+      isProceed = false;
+      newErrors.confirmPassword = "Passwords do not match";
+    }
 
     setErrors(newErrors);
 
@@ -91,7 +94,8 @@ const Register = () => {
     e.preventDefault();
     if (isValidate()) {
       const regObj = {
-        id,name,
+        id,
+        name,
         password,
         email,
         phone,
@@ -119,27 +123,35 @@ const Register = () => {
       <div className="signin-form">
         <h2>Create an Account</h2>
         <form onSubmit={handleSubmit}>
-          <div className={`form-group ${errors.id ? 'error' : ''}`}>
+          <div className={`form-group ${errors.id ? "error" : ""}`}>
             <input
               type="text"
               placeholder="Name"
               value={id}
-              onChange={(e) => {setId(e.target.value);setName(e.target.value);}}
+              onChange={(e) => {
+                setId(e.target.value);
+                setName(e.target.value);
+              }}
               required
             />
             {errors.id && <span className="error-message">{errors.id}</span>}
           </div>
-          <div className={`form-group ${errors.email ? 'error' : ''}`}>
+          <div className={`form-group ${errors.email ? "error" : ""}`}>
             <input
               type="email"
               placeholder="Email"
               value={email}
-              onChange={(e) => {setEmail(e.target.value);setRole("User")}}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setRole("user");
+              }}
               required
             />
-            {errors.email && <span className="error-message">{errors.email}</span>}
+            {errors.email && (
+              <span className="error-message">{errors.email}</span>
+            )}
           </div>
-          <div className={`form-group ${errors.password ? 'error' : ''}`}>
+          <div className={`form-group ${errors.password ? "error" : ""}`}>
             <input
               type="password"
               placeholder="Password"
@@ -147,9 +159,13 @@ const Register = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            {errors.password && <span className="error-message">{errors.password}</span>}
+            {errors.password && (
+              <span className="error-message">{errors.password}</span>
+            )}
           </div>
-          <div className={`form-group ${errors.confirmPassword ? 'error' : ''}`}>
+          <div
+            className={`form-group ${errors.confirmPassword ? "error" : ""}`}
+          >
             <input
               type="password"
               placeholder="Confirm Password"
@@ -157,7 +173,9 @@ const Register = () => {
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
-            {errors.confirmPassword && <span className="error-message">{errors.confirmPassword}</span>}
+            {errors.confirmPassword && (
+              <span className="error-message">{errors.confirmPassword}</span>
+            )}
           </div>
           <div className="form-group">
             <input
@@ -168,10 +186,15 @@ const Register = () => {
             />
           </div>
 
-          <button type="submit" className="submit-button">Register</button>
+          <button type="submit" className="submit-button">
+            Register
+          </button>
         </form>
         <p>
-          Already a member? <Link to="/Login" className="link">Login</Link>
+          Already a member?{" "}
+          <Link to="/Login" className="link">
+            Login
+          </Link>
         </p>
         <ToastContainer />
       </div>

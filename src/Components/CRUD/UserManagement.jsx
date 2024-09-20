@@ -96,7 +96,7 @@ const UserManagement = () => {
                       onClick={() => startEditing(user)}
                       variant="contained"
                     
-                      color="secondary"
+                      color="primary"
                     >
                       Edit
                     </Button>
