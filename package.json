@@ -60,5 +60,7 @@
   "devDependencies": {
     "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-beta.2"
-  }
+  },
+  "homepage": "https://ititeamprojectfrontend.github.io/React-PhoneStore-Project/"
+
 }
